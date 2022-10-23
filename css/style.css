@@ -6,4 +6,8 @@ body {
   font-family: "Poppins", sans-serif;
 }
 
+nav {
+  display: none;
+}
+
 /*# sourceMappingURL=style.css.map */
