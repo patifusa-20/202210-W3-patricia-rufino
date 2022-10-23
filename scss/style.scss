@@ -27,6 +27,7 @@ button {
     background: transparent;
     border: 0;
     font-family: inherit;
+    cursor: pointer;
 }
 
 h2,
@@ -78,17 +79,17 @@ p {
 }
 .card {
     padding-bottom: 39px;
+    margin-top: 34px;
     margin-bottom: 43px;
     border-bottom: variables.$border-line solid variables.$grayscale-line-color;
-    .group-images {
+    &__images {
         display: flex;
         gap: 20px;
         //Slider horizontal para las imágenes en Mobile
         overflow-x: scroll;
-        margin-top: 34px;
         margin-right: -30px;
     }
-    .group-stars {
+    &__stars {
         li {
             display: inline-block;
         }
@@ -98,5 +99,30 @@ p {
     }
     .btn-text {
         margin: 5px 0;
+    }
+
+    @media screen and (min-width: 768px) {
+        display: flex;
+        .card__content {
+            position: relative;
+        }
+        .btn-outline {
+            position: absolute;
+            right: 0;
+            top: 0;
+        }
+        &__images {
+            overflow-x: initial;
+            margin-right: 35px;
+            img + img {
+                display: none;
+            }
+        }
+        &__stars {
+            margin-top: 0;
+        }
+        .btn-outline {
+            margin-top: 0;
+        }
     }
 }
