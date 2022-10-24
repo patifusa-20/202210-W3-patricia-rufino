@@ -21,6 +21,7 @@ ul {
 a {
     text-decoration: none;
     color: initial;
+    letter-spacing: 0.75px;
 }
 
 button {
@@ -125,4 +126,52 @@ p {
             margin-top: 0;
         }
     }
+}
+
+footer {
+    margin: 0 30px;
+    text-align: center;
+    section {
+        margin-bottom: 100px;
+    }
+    h3 {
+        font-size: 20px;
+        color: variables.$grayscale-title-active-color;
+        font-weight: 600;
+    }
+    .footer-logo {
+        font-weight: 800;
+        font-size: 34px;
+        color: variables.$primary-color;
+    }
+    p {
+        margin-bottom: 24px;
+    }
+    h3 + p {
+        margin-top: 24px;
+    }
+    a {
+        font-weight: 400;
+        font-size: 16px;
+    }
+}
+
+address {
+    font-style: normal;
+    > * {
+        color: variables.$grayscale-label-color;
+    }
+    p:first-of-type {
+        margin-bottom: 0;
+    }
+
+    a:first-of-type {
+        display: block;
+        color: variables.$primary-color;
+        margin: 23px 0 18px;
+    }
+}
+
+.footer-nav {
+    display: none;
 }

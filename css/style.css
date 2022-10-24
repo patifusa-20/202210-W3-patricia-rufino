@@ -19,6 +19,7 @@ ul {
 a {
   text-decoration: none;
   color: initial;
+  letter-spacing: 0.75px;
 }
 
 button {
@@ -122,6 +123,53 @@ p {
   .card .btn-outline {
     margin-top: 0;
   }
+}
+
+footer {
+  margin: 0 30px;
+  text-align: center;
+}
+footer section {
+  margin-bottom: 100px;
+}
+footer h3 {
+  font-size: 20px;
+  color: #14142b;
+  font-weight: 600;
+}
+footer .footer-logo {
+  font-weight: 800;
+  font-size: 34px;
+  color: #5f2eea;
+}
+footer p {
+  margin-bottom: 24px;
+}
+footer h3 + p {
+  margin-top: 24px;
+}
+footer a {
+  font-weight: 400;
+  font-size: 16px;
+}
+
+address {
+  font-style: normal;
+}
+address > * {
+  color: #6e7191;
+}
+address p:first-of-type {
+  margin-bottom: 0;
+}
+address a:first-of-type {
+  display: block;
+  color: #5f2eea;
+  margin: 23px 0 18px;
+}
+
+.footer-nav {
+  display: none;
 }
 
 /*# sourceMappingURL=style.css.map */
