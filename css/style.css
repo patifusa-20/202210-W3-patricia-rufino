@@ -152,24 +152,54 @@ footer a {
   font-weight: 400;
   font-size: 16px;
 }
-
-address {
+footer address {
   font-style: normal;
 }
-address > * {
+footer address > * {
   color: #6e7191;
 }
-address p:first-of-type {
+footer address p:first-of-type {
   margin-bottom: 0;
 }
-address a:first-of-type {
+footer address a:first-of-type {
   display: block;
   color: #5f2eea;
   margin: 23px 0 18px;
 }
-
-.footer-nav {
+footer .footer-nav {
   display: none;
+}
+footer .footer-nav a {
+  color: #6e7191;
+}
+@media screen and (min-width: 768px) {
+  footer {
+    display: flex;
+    justify-content: space-between;
+    text-align: left;
+  }
+  footer section:first-of-type {
+    max-width: 257px;
+  }
+  footer .footer-logo {
+    font-weight: 600;
+    font-size: 20px;
+  }
+  footer .footer-nav {
+    display: initial;
+  }
+  footer li {
+    margin-bottom: 22px;
+  }
+  footer p,
+footer a {
+    font-size: 14px;
+  }
+  footer .footer-copyright {
+    font-size: 13px;
+    font-weight: 600;
+    letter-spacing: 0.25px;
+  }
 }
 
 /*# sourceMappingURL=style.css.map */
