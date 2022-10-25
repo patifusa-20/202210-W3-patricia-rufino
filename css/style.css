@@ -123,9 +123,14 @@ p {
         margin-top: 0;
     }
 }
+
+.search {
+    display: flex;
+    flex-direction: column;
+    margin: 2rem;
+}
+
 .searcher {
-    height: auto;
-    width: auto;
     display: flex;
     flex-direction: column;
     border-radius: 1rem;
@@ -159,7 +164,7 @@ p {
     padding: 1rem 3rem;
 }
 
-h2 {
+.searcher h2 {
     color: #bca4ff;
     font-size: 1.6rem;
 }
