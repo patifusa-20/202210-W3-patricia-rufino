@@ -246,6 +246,44 @@ h1 {
     transform: rotate(180deg);
 }
 
+.alert {
+    display: flex;
+    justify-content: space-between;
+    margin: 0 30px 40px;
+    padding: 20px 24px 16px;
+    border: variables.$border-width solid;
+    border-radius: variables.$input-radius-light;
+    img:first-of-type {
+        padding-right: 17px;
+        align-self: flex-start;
+    }
+    p {
+        flex-grow: 4;
+        font-weight: 500;
+        letter-spacing: 0.25px;
+        font-size: 14px;
+    }
+    &-success {
+        border-color: variables.$success-color;
+        background-color: variables.$success-color-light;
+        p {
+            color: variables.$success-color-dark;
+        }
+    }
+    &-error {
+        border-color: variables.$error-color;
+        background-color: variables.$error-color-light;
+        p {
+            color: variables.$error-color-dark;
+        }
+    }
+    @media screen and (min-width: 768px) {
+        img:first-of-type {
+            align-self: center;
+        }
+    }
+}
+
 footer {
     margin: 0 30px;
     text-align: center;
