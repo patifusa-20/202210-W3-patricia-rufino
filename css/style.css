@@ -213,4 +213,27 @@ footer a {
   }
 }
 
+/* banner */
+.banner {
+    background-color: #5f2eea;
+    color: #ffffff;
+    margin: 2rem;
+    border-radius: 1rem;
+    padding: 1rem;
+}
+.banner h2 {
+    text-align: center;
+    margin-top: 3rem;
+}
+
+.banner-button {
+    height: 4rem;
+    border-radius: 1rem;
+    margin-top: 1.3rem;
+    color: #f7f7fc;
+    width: 100%;
+    border: #ffffff solid;
+    margin-bottom: 2.5rem;
+}
+
 /*# sourceMappingURL=style.css.map */
