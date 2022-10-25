@@ -123,12 +123,40 @@ p {
         margin-top: 0;
     }
 }
+/* SEARCH */
 
 .search {
     display: flex;
     flex-direction: column;
     margin: 2rem;
 }
+.search h2 {
+    margin-left: 1.5rem;
+}
+
+.search-input {
+    border-radius: 1.5rem;
+    width: 100%;
+    height: 4rem;
+    margin-top: 1rem;
+}
+
+.search-button {
+    height: 4rem;
+    border-radius: 2rem;
+    background-color: #ed2e7e;
+    margin-top: 1.3rem;
+    color: #f7f7fc;
+}
+
+.search-borde {
+    border-top: #bca4ff solid;
+    opacity: 0.4;
+    transform: rotate(180deg);
+    width: 100%;
+}
+
+/* SEARCHER */
 
 .searcher {
     display: flex;
