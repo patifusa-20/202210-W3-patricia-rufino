@@ -6,7 +6,8 @@
 
 body {
     font-family: 'Poppins', sans-serif;
-    margin: 0;
+    margin: 0 auto;
+    max-width: 1168px;
 }
 
 nav {
@@ -21,6 +22,7 @@ ul {
 a {
     text-decoration: none;
     color: initial;
+    letter-spacing: 0.75px;
 }
 
 button {
@@ -74,6 +76,13 @@ p {
     }
 }
 
+.main-content {
+    @media screen and (min-width: 768px) {
+        display: flex;
+        margin: 0 30px;
+    }
+}
+
 .results {
     margin: 0 30px;
 }
@@ -82,6 +91,9 @@ p {
     margin-top: 34px;
     margin-bottom: 43px;
     border-bottom: variables.$border-line solid variables.$grayscale-line-color;
+    &:last-child {
+        border-bottom: 0;
+    }
     &__images {
         display: flex;
         gap: 20px;
@@ -126,6 +138,7 @@ p {
         }
     }
 }
+
 
 /* Header */
 header {
@@ -232,4 +245,81 @@ h1 {
     border-top: #d9dbe9 solid;
     opacity: 0.4;
     transform: rotate(180deg);
+
+footer {
+    margin: 0 30px;
+    text-align: center;
+    section {
+        margin-bottom: 100px;
+    }
+    h3 {
+        font-size: 20px;
+        color: variables.$grayscale-title-active-color;
+        font-weight: 600;
+    }
+    .footer-logo {
+        font-weight: 800;
+        font-size: 34px;
+        color: variables.$primary-color;
+    }
+    p {
+        margin-bottom: 24px;
+    }
+    h3 + p {
+        margin-top: 24px;
+    }
+    a {
+        font-weight: 400;
+        font-size: 16px;
+    }
+    address {
+        font-style: normal;
+        > * {
+            color: variables.$grayscale-label-color;
+        }
+        p:first-of-type {
+            margin-bottom: 0;
+        }
+
+        a:first-of-type {
+            display: block;
+            color: variables.$primary-color;
+            margin: 23px 0 18px;
+        }
+    }
+    .footer-nav {
+        display: none;
+        a {
+            color: variables.$grayscale-label-color;
+        }
+    }
+
+    @media screen and (min-width: 768px) {
+        display: flex;
+        justify-content: space-between;
+        text-align: left;
+        section:first-of-type {
+            max-width: 257px;
+        }
+        .footer-logo {
+            font-weight: 600;
+            font-size: 20px;
+        }
+        .footer-nav {
+            display: initial;
+        }
+        li {
+            margin-bottom: 22px;
+        }
+        p,
+        a {
+            font-size: 14px;
+        }
+        .footer-copyright {
+            font-size: 13px;
+            font-weight: 600;
+            letter-spacing: 0.25px;
+        }
+    }
+
 }
