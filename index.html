@@ -21,47 +21,54 @@
     <body>
         <header>
             <h1>Travelulu</h1>
-            <a href="menu">
-                <img src="assets/Menu.svg" alt="Menu icon" />
-            </a>
-            <nav id="menu">
-                <ul>
-                    <li><a href="#">Home</a></li>
-                    <li><a href="#">Services</a></li>
-                    <li><a href="#">Continents</a></li>
-                    <li><a href="#">Contact</a></li>
-                    <li><a href="#">Privacy</a></li>
-                </ul>
-            </nav>
+            <div class="menu">
+                <a href="menu">
+                    <img src="assets/Menu.svg" alt="Menu icon" />
+                </a>
+                <nav id="menu">
+                    <ul>
+                        <li><a href="#">Home</a></li>
+                        <li><a href="#">Services</a></li>
+                        <li><a href="#">Continents</a></li>
+                        <li><a href="#">Contact</a></li>
+                        <li><a href="#">Privacy</a></li>
+                    </ul>
+                </nav>
+            </div>
         </header>
         <main>
             <!-- SEARCH -->
             <section>
-                <h2>Find deals on hotels, homes and much more...</h2>
-                <form>
+                <form class="search">
+                    <div class="search-border"></div>
+                    <h2>Find deals on hotels, homes and much more...</h2>
                     <input
+                        class="search-input"
                         type="text"
                         name=""
                         id=""
                         placeholder="Where are you going?"
                     />
                     <input
+                        class="search-input"
                         type="text"
                         name=""
                         id=""
                         placeholder="Check-in - Check-out"
                     />
                     <input
+                        class="search-input"
                         type="text"
                         name=""
                         id=""
                         placeholder="2 adults - 0 children"
                     />
-                    <button type="submit">Search</button>
+                    <button class="search-button" type="submit">Search</button>
                 </form>
             </section>
             <!-- RESULTS -->
             <section class="main-content">
+                <div class="searcher-border"></div>
                 <div class="searcher">
                     <h2>Search</h2>
                     <label class="searcher-label">
