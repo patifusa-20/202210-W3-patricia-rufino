@@ -74,12 +74,14 @@ p {
   margin-left: 0.3em;
 }
 
+
 @media screen and (min-width: 768px) {
   .main-content {
     display: flex;
     margin: 0 30px;
   }
 }
+
 
 .results {
   margin: 0 30px;
@@ -90,9 +92,11 @@ p {
   margin-top: 34px;
   margin-bottom: 43px;
   border-bottom: 1px solid #d9dbe9;
+
 }
 .card:last-child {
   border-bottom: 0;
+
 }
 .card__images {
   display: flex;
@@ -134,6 +138,120 @@ p {
   .card .btn-outline {
     margin-top: 0;
   }
+
+}
+
+/* Header */
+header {
+  display: flex;
+  justify-content: space-between;
+}
+
+h1 {
+  color: #5f2eea;
+  margin: 2rem;
+  margin-bottom: 0.5rem;
+}
+
+.menu {
+  margin: 3rem;
+  margin-bottom: 0.5rem;
+}
+
+/* SEARCH */
+.search {
+  display: flex;
+  flex-direction: column;
+  margin: 2rem;
+}
+
+.search h2 {
+  margin-left: 1.5rem;
+}
+
+.search-input {
+  border-radius: 1.5rem;
+  width: 100%;
+  height: 4rem;
+  margin-top: 1rem;
+}
+
+.search-button {
+  height: 4rem;
+  border-radius: 2rem;
+  background-color: #ed2e7e;
+  margin-top: 1.3rem;
+  color: #f7f7fc;
+}
+
+.search-border {
+  border-top: #bca4ff solid;
+  opacity: 0.4;
+  transform: rotate(180deg);
+  width: 100%;
+}
+
+/* SEARCHER */
+.searcher {
+  display: flex;
+  flex-direction: column;
+  border-radius: 1rem;
+  margin: 2rem;
+  background-color: #2a00a2;
+  padding: 2rem;
+}
+
+.searcher-input {
+  display: flex;
+  border-radius: 1.5rem;
+  width: 100%;
+  height: 4rem;
+}
+
+#Check-date {
+  background-image: url(/202210-W3-patricia-rufino-aitor-mentxaka/images/Calandar.png);
+  background-repeat: no-repeat;
+  background-position: 1em;
+  padding: 1rem 3rem;
+}
+
+#Destination {
+  background-image: url(/202210-W3-patricia-rufino-aitor-mentxaka/images/Search.png);
+  background-repeat: no-repeat;
+  background-position: 1em;
+  padding: 1rem 3rem;
+}
+
+#adults-children {
+  background-image: url(/202210-W3-patricia-rufino-aitor-mentxaka/images/Profile.png);
+  background-repeat: no-repeat;
+  background-position: 1em;
+  padding: 1rem 3rem;
+}
+
+.searcher h2 {
+  color: #bca4ff;
+  font-size: 1.6rem;
+}
+
+.searcher-subtitles {
+  color: #f7f7fc;
+  font-size: 1.3rem;
+}
+
+.searcher button {
+  height: 4rem;
+  border-radius: 2rem;
+  background-color: #ed2e7e;
+  margin-top: 1.3rem;
+  color: #f7f7fc;
+}
+
+.searcher-border {
+  border-top: #d9dbe9 solid;
+  opacity: 0.4;
+  transform: rotate(180deg);
+
 }
 
 footer {
@@ -234,6 +352,7 @@ footer a {
     width: 100%;
     border: #ffffff solid;
     margin-bottom: 2.5rem;
+
 }
 
 /*# sourceMappingURL=style.css.map */
