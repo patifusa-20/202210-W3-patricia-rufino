@@ -123,6 +123,22 @@ p {
         margin-top: 0;
     }
 }
+
+/* Header */
+header {
+    display: flex;
+    justify-content: space-between;
+}
+h1 {
+    color: #5f2eea;
+    margin: 2rem;
+    margin-bottom: 0.5rem;
+}
+.menu {
+    margin: 3rem;
+    margin-bottom: 0.5rem;
+}
+
 /* SEARCH */
 
 .search {
@@ -149,7 +165,7 @@ p {
     color: #f7f7fc;
 }
 
-.search-borde {
+.search-border {
     border-top: #bca4ff solid;
     opacity: 0.4;
     transform: rotate(180deg);
@@ -207,6 +223,12 @@ p {
     background-color: #ed2e7e;
     margin-top: 1.3rem;
     color: #f7f7fc;
+}
+
+.searcher-border {
+    border-top: #d9dbe9 solid;
+    opacity: 0.4;
+    transform: rotate(180deg);
 }
 
 /*# sourceMappingURL=style.css.map */
