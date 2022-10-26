@@ -71,7 +71,7 @@ p {
   margin-left: 0.3em;
 }
 
-@media screen and (min-width: 768px) {
+@media screen and (min-width: 900px) {
   .main-content {
     display: flex;
     margin: 0 30px;
@@ -80,6 +80,11 @@ p {
 
 .results {
   margin: 0 30px;
+}
+@media screen and (min-width: 900px) {
+  .results {
+    margin: 0;
+  }
 }
 
 .more-results {
@@ -109,7 +114,7 @@ p {
   background-color: #d9dbe9;
   width: 100%;
 }
-@media screen and (min-width: 768px) {
+@media screen and (min-width: 900px) {
   .more-results {
     display: none;
   }
@@ -143,9 +148,10 @@ p {
   margin-bottom: 0;
   padding-bottom: 52px;
 }
-@media screen and (min-width: 768px) {
+@media screen and (min-width: 900px) {
   .card {
     display: flex;
+    align-items: flex-start;
   }
   .card .card__content {
     position: relative;
@@ -164,6 +170,10 @@ p {
   }
   .card__stars {
     margin-top: 0;
+  }
+  .card__stars img {
+    width: 22px;
+    height: 22px;
   }
   .card .btn-outline {
     margin-top: 0;
@@ -314,7 +324,7 @@ h1 {
 .alert-error p {
   color: #c30052;
 }
-@media screen and (min-width: 768px) {
+@media screen and (min-width: 900px) {
   .alert img:first-of-type {
     align-self: center;
   }
@@ -324,19 +334,20 @@ h1 {
   position: absolute;
   z-index: 1;
   top: 0;
+  left: 0;
   width: 100vw;
   height: 100vh;
-  transform: translateX(600px);
+  display: none;
   background-color: #2a00a2;
-  transition: transform 1s;
 }
 .menu nav:target {
-  transform: translateX(0px);
+  display: block;
 }
 .menu h2 {
+  margin: 0;
   color: #fcfcfc;
 }
-.menu a {
+.menu li a {
   display: block;
   padding: 24px;
   padding-left: 93px;
@@ -344,6 +355,22 @@ h1 {
 }
 .menu li:hover {
   background-color: #5f2eea;
+}
+.menu__header {
+  display: flex;
+  justify-content: space-between;
+  align-items: center;
+  padding: 34px 45px;
+  border: 1px solid rgba(188, 164, 255, 0.4);
+}
+.menu__header a {
+  padding: 0;
+}
+@media screen and (min-width: 900px) {
+  .menu nav {
+    width: 40vw;
+    left: 60vw;
+  }
 }
 
 footer {
@@ -393,7 +420,7 @@ footer .footer-nav {
 footer .footer-nav a {
   color: #6e7191;
 }
-@media screen and (min-width: 768px) {
+@media screen and (min-width: 900px) {
   footer {
     display: flex;
     justify-content: space-between;

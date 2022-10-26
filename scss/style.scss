@@ -74,7 +74,7 @@ p {
 }
 
 .main-content {
-    @media screen and (min-width: 768px) {
+    @media screen and (min-width: 900px) {
         display: flex;
         margin: 0 30px;
     }
@@ -82,6 +82,9 @@ p {
 
 .results {
     margin: 0 30px;
+    @media screen and (min-width: 900px) {
+        margin: 0;
+    }
 }
 .more-results {
     position: relative;
@@ -109,7 +112,7 @@ p {
         background-color: variables.$grayscale-line-color;
         width: 100%;
     }
-    @media screen and (min-width: 768px) {
+    @media screen and (min-width: 900px) {
         display: none;
     }
 }
@@ -144,8 +147,9 @@ p {
         padding-bottom: 52px;
     }
 
-    @media screen and (min-width: 768px) {
+    @media screen and (min-width: 900px) {
         display: flex;
+        align-items: flex-start;
         .card__content {
             position: relative;
         }
@@ -163,6 +167,10 @@ p {
         }
         &__stars {
             margin-top: 0;
+            img {
+                width: 22px;
+                height: 22px;
+            }
         }
         .btn-outline {
             margin-top: 0;
@@ -308,7 +316,7 @@ h1 {
             color: variables.$error-color-dark;
         }
     }
-    @media screen and (min-width: 768px) {
+    @media screen and (min-width: 900px) {
         img:first-of-type {
             align-self: center;
         }
@@ -321,21 +329,21 @@ h1 {
         position: absolute;
         z-index: 1;
         top: 0;
+        left: 0;
         width: 100vw;
         height: 100vh;
-        transform: translateX(600px);
+        display: none;
         background-color: variables.$primary-dark-color;
 
-        transition: transform 1s;
-
         &:target {
-            transform: translateX(0px);
+            display: block;
         }
     }
     h2 {
+        margin: 0;
         color: variables.$grayscale-off-white-color;
     }
-    a {
+    li a {
         display: block;
         padding: 24px;
         padding-left: 93px;
@@ -343,6 +351,24 @@ h1 {
     }
     li:hover {
         background-color: variables.$primary-color;
+    }
+    &__header {
+        display: flex;
+        justify-content: space-between;
+        align-items: center;
+        padding: 34px 45px;
+        border: variables.$border-line solid
+            rgba(variables.$primary-color--darkmode, 40%);
+        a {
+            padding: 0;
+        }
+    }
+
+    @media screen and (min-width: 900px) {
+        nav {
+            width: 40vw;
+            left: 60vw;
+        }
     }
 }
 
@@ -394,7 +420,7 @@ footer {
         }
     }
 
-    @media screen and (min-width: 768px) {
+    @media screen and (min-width: 900px) {
         display: flex;
         justify-content: space-between;
         text-align: left;
