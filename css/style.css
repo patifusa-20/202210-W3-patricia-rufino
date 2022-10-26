@@ -324,14 +324,13 @@ h1 {
   position: absolute;
   z-index: 1;
   top: 0;
-  width: 100vw;
+  width: 70vw;
   height: 100vh;
-  transform: translateX(600px);
+  display: none;
   background-color: #2a00a2;
-  transition: transform 1s;
 }
 .menu nav:target {
-  transform: translateX(0px);
+  display: block;
 }
 .menu h2 {
   color: #fcfcfc;

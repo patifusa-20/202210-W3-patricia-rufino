@@ -321,15 +321,13 @@ h1 {
         position: absolute;
         z-index: 1;
         top: 0;
-        width: 100vw;
+        width: 70vw;
         height: 100vh;
-        transform: translateX(600px);
+        display: none;
         background-color: variables.$primary-dark-color;
 
-        transition: transform 1s;
-
         &:target {
-            transform: translateX(0px);
+            display: block;
         }
     }
     h2 {
