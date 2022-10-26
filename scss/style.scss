@@ -329,6 +329,7 @@ h1 {
         position: absolute;
         z-index: 1;
         top: 0;
+        left: 0;
         width: 100vw;
         height: 100vh;
         display: none;
@@ -339,9 +340,10 @@ h1 {
         }
     }
     h2 {
+        margin: 0;
         color: variables.$grayscale-off-white-color;
     }
-    a {
+    li a {
         display: block;
         padding: 24px;
         padding-left: 93px;
@@ -350,9 +352,22 @@ h1 {
     li:hover {
         background-color: variables.$primary-color;
     }
+    &__header {
+        display: flex;
+        justify-content: space-between;
+        align-items: center;
+        padding: 34px 45px;
+        border: variables.$border-line solid
+            rgba(variables.$primary-color--darkmode, 40%);
+        a {
+            padding: 0;
+        }
+    }
+
     @media screen and (min-width: 900px) {
         nav {
-            width: 70vw;
+            width: 40vw;
+            left: 60vw;
         }
     }
 }

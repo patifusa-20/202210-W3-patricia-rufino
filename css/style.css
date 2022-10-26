@@ -334,6 +334,7 @@ h1 {
   position: absolute;
   z-index: 1;
   top: 0;
+  left: 0;
   width: 100vw;
   height: 100vh;
   display: none;
@@ -343,9 +344,10 @@ h1 {
   display: block;
 }
 .menu h2 {
+  margin: 0;
   color: #fcfcfc;
 }
-.menu a {
+.menu li a {
   display: block;
   padding: 24px;
   padding-left: 93px;
@@ -354,9 +356,20 @@ h1 {
 .menu li:hover {
   background-color: #5f2eea;
 }
+.menu__header {
+  display: flex;
+  justify-content: space-between;
+  align-items: center;
+  padding: 34px 45px;
+  border: 1px solid rgba(188, 164, 255, 0.4);
+}
+.menu__header a {
+  padding: 0;
+}
 @media screen and (min-width: 900px) {
   .menu nav {
-    width: 70vw;
+    width: 40vw;
+    left: 60vw;
   }
 }
 
