@@ -6,10 +6,7 @@ body {
   font-family: "Poppins", sans-serif;
   margin: 0 auto;
   max-width: 1168px;
-}
-
-nav {
-  display: none;
+  overflow-x: hidden;
 }
 
 ul {
@@ -321,6 +318,32 @@ h1 {
   .alert img:first-of-type {
     align-self: center;
   }
+}
+
+.menu nav {
+  position: absolute;
+  z-index: 1;
+  top: 0;
+  width: 100vw;
+  height: 100vh;
+  transform: translateX(600px);
+  background-color: #2a00a2;
+  transition: transform 1s;
+}
+.menu nav:target {
+  transform: translateX(0px);
+}
+.menu h2 {
+  color: #fcfcfc;
+}
+.menu a {
+  display: block;
+  padding: 24px;
+  padding-left: 93px;
+  color: #f3efff;
+}
+.menu li:hover {
+  background-color: #5f2eea;
 }
 
 footer {

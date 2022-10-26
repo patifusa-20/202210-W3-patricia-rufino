@@ -8,10 +8,7 @@ body {
     font-family: 'Poppins', sans-serif;
     margin: 0 auto;
     max-width: 1168px;
-}
-
-nav {
-    display: none;
+    overflow-x: hidden;
 }
 
 ul {
@@ -315,6 +312,37 @@ h1 {
         img:first-of-type {
             align-self: center;
         }
+    }
+}
+
+// NAVIGATION SYSTEM
+.menu {
+    nav {
+        position: absolute;
+        z-index: 1;
+        top: 0;
+        width: 100vw;
+        height: 100vh;
+        transform: translateX(600px);
+        background-color: variables.$primary-dark-color;
+
+        transition: transform 1s;
+
+        &:target {
+            transform: translateX(0px);
+        }
+    }
+    h2 {
+        color: variables.$grayscale-off-white-color;
+    }
+    a {
+        display: block;
+        padding: 24px;
+        padding-left: 93px;
+        color: variables.$primary-bg-color;
+    }
+    li:hover {
+        background-color: variables.$primary-color;
     }
 }
 
