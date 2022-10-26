@@ -197,6 +197,7 @@ h1 {
     margin: 2rem;
     background-color: #2a00a2;
     padding: 2rem;
+   
 }
 .searcher-input {
     display: flex;
@@ -245,6 +246,32 @@ h1 {
     border-top: #d9dbe9 solid;
     opacity: 0.4;
     transform: rotate(180deg);
+
+
+.banner {
+    background-image: -moz-linear-gradient(#5f2eea);
+
+    color: #ffffff;
+    margin: 2rem;
+    border-radius: 1rem;
+    padding: 1rem;
+}
+.banner h2 {
+    text-align: center;
+    margin-top: 3rem;
+}
+
+.banner-button {
+    height: 4rem;
+    border-radius: 1rem;
+    margin-top: 1.3rem;
+    color: #f7f7fc;
+    width: 100%;
+    border: #ffffff solid;
+    margin-bottom: 2.5rem;
+    background-image: -moz-linear-gradient();
+}
+
 
 footer {
     margin: 0 30px;
