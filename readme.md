@@ -16,4 +16,4 @@ Requisitos:
 -   Añadir los dos hooks.
 -   Hay que desplegar la web a Netlify.
 
-El estado actual dle proyecto se puede ver aquí -> https://challenge-w3.netlify.app/
+El estado actual dle proyecto se puede ver aquí -> https://challenge-w3-patricia-aitor.netlify.app/
