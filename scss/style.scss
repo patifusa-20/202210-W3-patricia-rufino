@@ -8,10 +8,7 @@ body {
     font-family: 'Poppins', sans-serif;
     margin: 0 auto;
     max-width: 1168px;
-}
-
-nav {
-    display: none;
+    overflow-x: hidden;
 }
 
 ul {
@@ -86,6 +83,36 @@ p {
 .results {
     margin: 0 30px;
 }
+.more-results {
+    position: relative;
+    display: flex;
+    justify-content: center;
+    &__circle {
+        display: flex;
+        justify-content: center;
+        align-items: center;
+        z-index: 1;
+        border-radius: 50%;
+        width: 54px;
+        height: 54px;
+        margin-bottom: 43px;
+        border: variables.$border-width solid variables.$primary-color;
+        outline: variables.$text-on-color solid 36px;
+        background-color: variables.$text-on-color;
+    }
+    &::before {
+        content: '';
+        position: absolute;
+        top: calc(54px / 2);
+        display: block;
+        height: variables.$border-line;
+        background-color: variables.$grayscale-line-color;
+        width: 100%;
+    }
+    @media screen and (min-width: 768px) {
+        display: none;
+    }
+}
 .card {
     padding-bottom: 39px;
     margin-top: 34px;
@@ -111,6 +138,10 @@ p {
     }
     .btn-text {
         margin: 5px 0;
+    }
+    &:last-child {
+        margin-bottom: 0;
+        padding-bottom: 52px;
     }
 
     @media screen and (min-width: 768px) {
@@ -138,7 +169,6 @@ p {
         }
     }
 }
-
 
 /* Header */
 header {
@@ -245,6 +275,76 @@ h1 {
     border-top: #d9dbe9 solid;
     opacity: 0.4;
     transform: rotate(180deg);
+}
+
+.alert {
+    display: flex;
+    justify-content: space-between;
+    margin: 0 30px 40px;
+    padding: 20px 24px 16px;
+    border: variables.$border-width solid;
+    border-radius: variables.$input-radius-light;
+    img:first-of-type {
+        padding-right: 17px;
+        align-self: flex-start;
+    }
+    p {
+        flex-grow: 4;
+        font-weight: 500;
+        letter-spacing: 0.25px;
+        font-size: 14px;
+    }
+    &-success {
+        border-color: variables.$success-color;
+        background-color: variables.$success-color-light;
+        p {
+            color: variables.$success-color-dark;
+        }
+    }
+    &-error {
+        border-color: variables.$error-color;
+        background-color: variables.$error-color-light;
+        p {
+            color: variables.$error-color-dark;
+        }
+    }
+    @media screen and (min-width: 768px) {
+        img:first-of-type {
+            align-self: center;
+        }
+    }
+}
+
+// NAVIGATION SYSTEM
+.menu {
+    nav {
+        position: absolute;
+        z-index: 1;
+        top: 0;
+        width: 100vw;
+        height: 100vh;
+        transform: translateX(600px);
+        background-color: variables.$primary-dark-color;
+
+        transition: transform 1s;
+
+        &:target {
+            transform: translateX(0px);
+        }
+    }
+    h2 {
+        color: variables.$grayscale-off-white-color;
+    }
+    a {
+        display: block;
+        padding: 24px;
+        padding-left: 93px;
+        color: variables.$primary-bg-color;
+    }
+    li:hover {
+        background-color: variables.$primary-color;
+    }
+}
 
 footer {
     margin: 0 30px;
@@ -321,5 +421,4 @@ footer {
             letter-spacing: 0.25px;
         }
     }
-
 }
