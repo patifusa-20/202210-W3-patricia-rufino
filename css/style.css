@@ -260,6 +260,13 @@ h1 {
     padding: 1rem 3rem;
 }
 
+#Check-date2 {
+    background-image: url(/images/Calandar.png);
+    background-repeat: no-repeat;
+    background-position: 1em;
+    padding: 1rem 3rem;
+}
+
 #Destination {
     background-image: url(/images/Search.png);
     background-repeat: no-repeat;
