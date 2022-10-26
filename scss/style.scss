@@ -326,31 +326,41 @@ h1 {
 // NAVIGATION SYSTEM
 .menu {
     nav {
-        position: absolute;
+        position: fixed;
         z-index: 1;
         top: 0;
         left: 0;
         width: 100vw;
         height: 100vh;
+        overflow-y: auto;
         display: none;
+        color: variables.$primary-bg-color;
         background-color: variables.$primary-dark-color;
 
         &:target {
             display: block;
+        }
+        > ul > li {
+            font-size: 20px;
+            font-weight: 600;
+            padding-left: 93px;
         }
     }
     h2 {
         margin: 0;
         color: variables.$grayscale-off-white-color;
     }
-    li a {
-        display: block;
-        padding: 24px;
-        padding-left: 93px;
-        color: variables.$primary-bg-color;
-    }
-    li:hover {
-        background-color: variables.$primary-color;
+    li {
+        font-size: 16px;
+        font-weight: 400;
+        padding: 24px 0;
+        a {
+            display: block;
+            color: variables.$primary-bg-color;
+        }
+        &:hover {
+            background-color: variables.$primary-color;
+        }
     }
     &__header {
         display: flex;
@@ -363,11 +373,25 @@ h1 {
             padding: 0;
         }
     }
+    &__sublist {
+        &::before {
+            content: '>';
+            position: absolute;
+            left: 3em;
+        }
+        &--open {
+            background-color: variables.$primary-color;
+            &::before {
+                content: '>';
+                transform: rotate(90deg);
+            }
+        }
+    }
 
     @media screen and (min-width: 900px) {
         nav {
-            width: 40vw;
-            left: 60vw;
+            width: 30vw;
+            left: 70vw;
         }
     }
 }
