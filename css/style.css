@@ -197,6 +197,12 @@ h1 {
     margin-bottom: 0.5rem;
 }
 
+@media screen and (min-width: 900px) {
+    h1 {
+        margin-left: 0;
+    }
+}
+
 /* SEARCH */
 .search {
     display: flex;
@@ -213,6 +219,10 @@ h1 {
     width: 100%;
     height: 4rem;
     margin-top: 1rem;
+    font-family: 'Poppins', sans-serif;
+    background-image: url(../assets/Forward-primary-color.svg);
+    background-repeat: no-repeat;
+    background-position: 95%;
 }
 
 .search-button {
@@ -221,6 +231,7 @@ h1 {
     background-color: #ed2e7e;
     margin-top: 1.3rem;
     color: #f7f7fc;
+    font-family: 'Poppins', sans-serif;
 }
 
 .search-border {
@@ -242,8 +253,13 @@ h1 {
         margin: 0;
     }
     .search-input {
-        margin: 1rem;
+        margin: 1rem 0.5rem;
+        margin-left: 0;
+
         width: 25rem;
+    }
+    .search-border {
+        margin-bottom: 2rem;
     }
 }
 
@@ -315,9 +331,21 @@ h1 {
     opacity: 0.4;
     transform: rotate(180deg);
 }
+input {
+    font-family: 'Poppins';
+    font-weight: 400;
+    font-size: 16px;
+    padding-left: 1rem;
+}
+button {
+    font-weight: 600;
+    font-family: 'Poppins';
+    font-size: 16px;
+}
 @media screen and (min-width: 900px) {
-    .searcher {
+    .main-content .searcher {
         margin-left: 0;
+        border-left: 0;
     }
 }
 
