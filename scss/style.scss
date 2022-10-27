@@ -225,7 +225,22 @@ h1 {
     transform: rotate(180deg);
     width: 100%;
 }
-
+@media screen and (min-width: 900px) {
+    .search {
+        display: flex;
+        flex-direction: row;
+        justify-content: center;
+        align-items: center;
+        margin-left: 0;
+    }
+    .search-button {
+        width: 15rem;
+        margin: 0;
+    }
+    .search-input {
+        margin: 1rem;
+        width: 25rem;
+    }
 /* SEARCHER */
 
 .searcher {
@@ -235,12 +250,13 @@ h1 {
     margin: 2rem;
     background-color: #2a00a2;
     padding: 2rem;
+    max-height: 36rem;
 }
 .searcher-input {
     display: flex;
     border-radius: 1.5rem;
     width: 100%;
-    height: 4rem;
+    height: 3.5rem;
 }
 
 #Check-date {
@@ -272,7 +288,7 @@ h1 {
     font-size: 1.3rem;
 }
 .searcher button {
-    height: 4rem;
+    height: 3.5rem;
     border-radius: 2rem;
     background-color: #ed2e7e;
     margin-top: 1.3rem;
@@ -283,6 +299,11 @@ h1 {
     border-top: #d9dbe9 solid;
     opacity: 0.4;
     transform: rotate(180deg);
+}
+@media screen and (min-width: 900px) {
+    .searcher {
+        margin-left: 0;
+    }
 }
 
 .alert {
