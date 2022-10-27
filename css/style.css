@@ -336,11 +336,11 @@ h1 {
     border-radius: 1rem;
     margin: 2rem;
     padding: 5rem;
-    background-image: -webkit-linear-gradient(top right, #eb94d0, #2079b0);
-    background-image: -moz-linear-gradient(top right, #eb94d0, #2079b0);
-    background-image: -ms-linear-gradient(top right, #eb94d0, #2079b0);
-    background-image: -o-linear-gradient(top right, #eb94d0, #2079b0);
-    background-image: linear-gradient(top right, #eb94d0, #2079b0);
+    background-image: -webkit-linear-gradient(top right, #5f2eea, #2a00a2);
+    background-image: -moz-linear-gradient(top right, #5f2eea, #2a00a2);
+    background-image: -ms-linear-gradient(top right, #5f2eea, #2a00a2);
+    background-image: -o-linear-gradient(top right, #5f2eea, #2a00a2);
+    background-image: linear-gradient(top right, #5f2eea, #2a00a2);
 }
 
 .banner h2 {
