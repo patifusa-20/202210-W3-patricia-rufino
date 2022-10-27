@@ -328,6 +328,9 @@ h1 {
     background-image: -ms-linear-gradient(top right, #5f2eea, #2a00a2);
     background-image: -o-linear-gradient(top right, #5f2eea, #2a00a2);
     background-image: linear-gradient(top right, #5f2eea, #2a00a2);
+    background-image: url('../assets/bg-banner.svg');
+    background-repeat: no-repeat;
+    background-size: 100%;
 }
 
 .banner h2 {
