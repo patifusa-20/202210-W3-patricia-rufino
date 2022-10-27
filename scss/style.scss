@@ -260,19 +260,26 @@ h1 {
 }
 
 #Check-date {
-    background-image: url(/202210-W3-patricia-rufino-aitor-mentxaka/images/Calandar.png);
+    background-image: url(../assets/Calendar.svg);
     background-repeat: no-repeat;
     background-position: 1em;
     padding: 1rem 3rem;
 }
+#Check-date2 {
+    background-image: url(../assets/Calendar.svg);
+    background-repeat: no-repeat;
+    background-position: 1em;
+    padding: 1rem 3rem;
+}
+
 #Destination {
-    background-image: url(/202210-W3-patricia-rufino-aitor-mentxaka/images/Search.png);
+    background-image: url(../assets/Search.svg);
     background-repeat: no-repeat;
     background-position: 1em;
     padding: 1rem 3rem;
 }
 #adults-children {
-    background-image: url(/202210-W3-patricia-rufino-aitor-mentxaka/images/Profile.png);
+    background-image: url(../assets/Profile.svg);
     background-repeat: no-repeat;
     background-position: 1em;
     padding: 1rem 3rem;
@@ -304,6 +311,32 @@ h1 {
     .searcher {
         margin-left: 0;
     }
+}
+.banner {
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    align-items: center;
+    border-radius: 1rem;
+    margin: 2rem;
+    padding: 5rem;
+
+    background-image: url('../assets/bg-banner.svg');
+    background-repeat: no-repeat;
+    background-size: 100%;
+}
+
+.banner h2 {
+    color: #ffffff;
+}
+
+.banner-button {
+    height: 3.5rem;
+    width: 25rem;
+    border-radius: 2rem;
+    margin-top: 1.3rem;
+    color: #f7f7fc;
+    border: solid #f7f7fc;
 }
 
 .alert {
