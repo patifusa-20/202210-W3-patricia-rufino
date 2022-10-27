@@ -211,7 +211,7 @@ h1 {
 }
 
 .search h2 {
-    margin-left: 1.5rem;
+    margin-left: 15rem;
 }
 
 .search-input {
@@ -331,6 +331,15 @@ h1 {
     opacity: 0.4;
     transform: rotate(180deg);
 }
+@media screen and (min-width: 900px) {
+    .main-content {
+        margin-left: 0;
+    }
+    .searcher {
+        margin-left: 0;
+    }
+}
+
 input {
     font-family: 'Poppins';
     font-weight: 400;
@@ -341,12 +350,6 @@ button {
     font-weight: 600;
     font-family: 'Poppins';
     font-size: 16px;
-}
-@media screen and (min-width: 900px) {
-    .main-content .searcher {
-        margin-left: 0;
-        border-left: 0;
-    }
 }
 
 .banner {
